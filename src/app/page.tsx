@@ -1,9 +1,8 @@
-import Link from "next/link";
+
+import Header from "./components/Header";
 
 export default function Home() {
   return (
-    <div>
-      <Link href="/imc">Calcule seu IMC</Link>
-    </div>
+    <Header />
   );
 }
