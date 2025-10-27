@@ -1,12 +1,16 @@
-import Container from "../components/Container";
-import H1Title from "../components/H1Title";
 
-const Imc = () => {
+import { Metadata } from "next";
+import Imc from "../components/IMC";
+
+export const metadata: Metadata = {
+  title: "Calculadora de IMC", 
+  description: "Calculadora de IMC: insira seu peso e sua altura e a calculadora faz todo o trabalho para você e retorna o seu Índice de Massa Corporal"
+}
+
+const Page = () => {
   return (
-    <Container>
-      <H1Title>Calculadora de IMC</H1Title>
-    </Container>
+    <Imc />
   )
 }
 
-export default Imc;
+export default Page;
