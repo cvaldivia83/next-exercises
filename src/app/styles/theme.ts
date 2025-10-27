@@ -48,4 +48,4 @@ export const theme = {
   }
 } as const;
 
-export type theme = typeof theme;
+export type ThemeType = typeof theme;
