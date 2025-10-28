@@ -30,7 +30,9 @@ const Header = () => {
           <li className="nav-item">
             <Link href="/imc" className="nav-link">Calculadora de IMC</Link>
           </li>
-          
+          <li className="nav-item">
+            <Link href="/cursos" className="nav-link">Cursos</Link>
+          </li>
         </ul>
       </nav>
     </StyledHeader>
