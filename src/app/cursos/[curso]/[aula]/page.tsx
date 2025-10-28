@@ -1,5 +1,6 @@
 import Container from "../../../components/Container"
 import H1Title from "../../../components/H1Title"
+import { GET_AULA } from "@/app/api/cursos"
 
 type AulaParams = {
   params: {
@@ -8,10 +9,13 @@ type AulaParams = {
   }
 }
 
-const AulaPage = ({ params }: AulaParams) => {
+const AulaPage = async ({ params }: AulaParams) => {
+
+  const aula = await GET_AULA(params.curso, params.aula);
+
   return (
     <Container>
-      <H1Title>Curso: {params.curso} - Aula {params.aula}</H1Title>
+      <H1Title>Aula {aula.nome}</H1Title>
     </Container>
   )
 }
